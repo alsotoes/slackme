@@ -1,3 +1,6 @@
+# to store local variables
+.env
+
 # Logs
 logs
 *.log
