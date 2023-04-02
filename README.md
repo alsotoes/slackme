@@ -31,7 +31,7 @@ I'll add the steps later on
 ## Credits
 
  - The [slackin](https://github.com/alsotoes/slackin) project as I used the look and feel.  
- - Inhered from the slackme project:  
+ - Inhered from the slackin project:  
 	 - The SVG badge generation was taken from the excellent [shields](https://github.com/badges/shields) project.  
 	 - The button CSS is based on [github-buttons](https://github.com/mdo/github-buttons)
 
