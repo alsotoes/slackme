@@ -27,7 +27,7 @@ All parameters can alternatively be configured through environment variables.
 | `GOOGLE_CAPTCHA_SITEKEY` | `''` | reCAPTCHA sitekey |
 | `SLACKME_COC` | `''` | Full URL to a CoC that needs to be agreed to |
 | `PORT` | `3000` | Port to listen on |
-| `DEBUG` | `true` | Enable debug log output |
+| `DEBUG` | `false` | Enable debug log output |
 
 Alternatively, you can specify the configuration parameters in a `.env` file in the root directory of your project and add environment-specific variables on new lines in the form of NAME=VALUE. For example:
 
