@@ -1,0 +1,28 @@
+{
+  "name": "Slackme",
+  "description": "Let people invite themselves to your Slack workspace",
+  "repository": "https://github.com/alsotoes/slackme",
+  "keywords": ["go", "slack"],
+  "env": {
+    "SLACK_API_TOKEN": {
+      "description": "A Slack API token (go to https://api.slack.com/web to know more).",
+      "required": true
+    },
+    "SLACKME_COC": {
+      "description": "A URL to a Code of Conduct people must agree on before joining.",
+      "required": false
+    },
+    "SLACKME_PORT": {
+      "description": "In case you want to change the server port.",
+      "required": false
+    },
+    "GOOGLE_CAPTCHA_SECRET": {
+      "description": "Google captcha secret (go to https://www.google.com/recaptcha/about/ to know more).",
+      "required": false
+    },
+    "GOOGLE_CAPTCHA_SITEKEY": {
+      "description": "Google captcha sitekey (go to https://www.google.com/recaptcha/about/ to know more).",
+      "required": false
+    }
+  }
+}

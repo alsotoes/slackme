@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  {{ template "header.tmpl" .}}
+<body>
+  <div class="splash">
+    <div class="logos">
+      <div class="logo org"></div>
+      <div class="logo slack"></div>
+    </div>
+    <p>Join <b>{{ .team_name }}</b> on Slack.</p>
+    <p class="status"><b class="total">{{ .team_members }}</b> users are registered so far.</p>
+
+    <form id="invite" action="?" method="POST">
+      <input type="email" name="email" placeholder="you@yourdomain.com" autofocus=true class="form-item">
+      {{ if (ne .team_coc "") }}
+      <div class="coc">
+        <label>
+          <input type="checkbox" name="coc" value="1">I agree to the <a href="{{ .team_coc }}" target="_blank">Code of Conduct</a>.
+        </label>
+      </div>
+      {{ end }}
+      {{ if (ne .reCAPTCHA_site_key "") }}
+      <br><div id="captcha"></div><br>
+      {{ end }}
+      <button class="loading" onclick="onClick()">Get my Invite</button>
+    </form>
+    <p class="signin">or <a href="https://{{ .team_domain }}.slack.com" target="_top">sign in</a>.</p>
+    {{ template "footer.tmpl" .}}
+  </div>
+</body>
+</html>

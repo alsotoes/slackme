@@ -1,0 +1,23 @@
+<head>
+  <title>Join {{ .team_name }} on Slack!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://slack.global.ssl.fastly.net/272a/img/icons/favicon-32.png">
+  <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  <style>
+    .logo.org{
+      background-image:url({{ .team_logo }});
+      margin-right:7rem
+    }
+  </style>
+
+  {{ if (ne .reCAPTCHA_site_key "") }}
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('captcha', {
+        'sitekey' : '{{ .reCAPTCHA_site_key }}'
+      });
+    };
+  </script>
+  {{ end }}
+</head>
