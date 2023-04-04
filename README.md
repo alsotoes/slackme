@@ -16,20 +16,18 @@ This project is heavily based on the [slackin](https://github.com/rauchg/slackin
 - [gin-gonic](https://github.com/gin-gonic/gin)
 - [slack-go](https://github.com/slack-go/slack)
 
-## How to use
-
 # Parameters
 
 All parameters can alternatively be configured through environment variables.
 
-| Flag | Short | Environment variable | Default | Description |
-| --- | --- | --- | --- | --- |
+| Environment variable | Default | Description |
+| --- | --- | --- |
 | `SLACK_API_TOKEN` | **Required** | [API token](https://api.slack.com/tutorials/tracks/getting-a-token) |
 | `GOOGLE_CAPTCHA_SECRET` | `''` | reCAPTCHA secret |
 | `GOOGLE_CAPTCHA_SITEKEY` | `''` | reCAPTCHA sitekey |
 | `SLACKME_COC` | `''` | Full URL to a CoC that needs to be agreed to |
-| `PORT` | `3000` | Port to listen on, 3000 by default|
-| `DEBUG` | `true` | Enable debug log output, false by default|
+| `PORT` | `3000` | Port to listen on |
+| `DEBUG` | `true` | Enable debug log output |
 
 Alternatively, you can specify the configuration parameters in a `.env` file in the root directory of your project and add environment-specific variables on new lines in the form of NAME=VALUE. For example:
 
@@ -42,6 +40,8 @@ PORT=8080
 DEBUG=true
 ```
 
+# Deploy
+
 #### Deploy on any server
 I'll add the steps later on
 
@@ -53,7 +53,6 @@ I'll add the steps later on
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/alsotoes/slackme/tree/master)
 
   
-
 ## Credits
 
  - The [slackin](https://github.com/alsotoes/slackin) project as I used the look and feel.  
